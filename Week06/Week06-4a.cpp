@@ -1,0 +1,16 @@
+// Week06-4a.cpp SOIT107 Base 020
+
+#include <stdio.h>
+
+int main()
+{
+    int N;
+
+    for (int i = 0; i < 6; i++) {
+        scanf("%d", &N);
+
+        printf("%d\n", N * N * N);
+    }
+
+    return 0;
+}
