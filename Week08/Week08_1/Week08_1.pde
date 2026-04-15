@@ -1,0 +1,9 @@
+// Week08-1 好玩的程式設計 氣球(圖片)
+
+
+size(500, 500); 
+PImage img; // 圖片宣告（要把 balloon.png 從檔案總管「拉到」程式裡）
+img = loadImage("balloon.png"); // 呼叫函式、讀入圖片
+image(img, 0, 0, 100, 100); 
+// image(圖, x, y, 寬, 高);
+image(img, 100, 0, 100*2, 100*2); // 兩倍大的氣球
