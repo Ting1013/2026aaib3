@@ -1,0 +1,38 @@
+// Week10-3.cpp
+// Selection Sort 選擇排序法
+
+#include <stdio.h>
+
+int main()
+{
+    int a[10] = {9,8,7,6,5,4,3,2,1,0};
+
+    // 先印原始資料
+    for (int k = 0; k < 10; k++) {
+        printf("%d ", a[k]);
+    }
+    printf("\n");
+
+    // Selection Sort
+    for (int i = 0; i < 10; i++) { // 左邊
+
+        // 選好左邊的 i，它將會是最小的
+        for (int j = i + 1; j < 10; j++) { // 右邊
+
+            if (a[i] > a[j]) { // 大小不對，就交換
+
+                int temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+            }
+        }
+
+        // 每做完一輪就印一次
+        for (int k = 0; k < 10; k++) {
+            printf("%d ", a[k]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
